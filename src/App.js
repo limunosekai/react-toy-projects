@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './LandingPage/LandingPage';
 import BirthdayReminder from './BirthdayReminder/BirthdayReminder';
+import Tours from './Tours/Tours';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={LandingPage} />
         <Route exact path='/birth' component={BirthdayReminder} />
+        <Route exact path='/tours' component={Tours} />
       </Switch>
     </div>
   );

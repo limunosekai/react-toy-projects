@@ -11,11 +11,11 @@ const cardData = [
     url: '/birth',
   },
   {
-    title: 'Birthday-Reminder',
-    description: 'Birthday Reminder App',
+    title: 'Tours',
+    description: 'Tours',
     image:
       'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/birth',
+    url: '/tours',
   },
   {
     title: 'Birthday-Reminder',
