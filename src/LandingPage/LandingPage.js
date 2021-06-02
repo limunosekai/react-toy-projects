@@ -18,11 +18,11 @@ const cardData = [
     url: '/tours',
   },
   {
-    title: 'Birthday-Reminder',
-    description: 'Birthday Reminder App',
+    title: 'Reviews',
+    description: 'Review App',
     image:
       'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/birth',
+    url: '/reviews',
   },
   {
     title: 'Birthday-Reminder',
@@ -36,8 +36,8 @@ const cardData = [
 function LandingPage() {
   const renderCards = cardData.map((card, i) => {
     return (
-      <Col lg={6} md={12} xs={24}>
-        <CardItem data={card} key={i} />
+      <Col lg={6} md={12} xs={24} key={i}>
+        <CardItem data={card} />
       </Col>
     );
   });
