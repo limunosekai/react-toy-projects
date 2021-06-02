@@ -32,7 +32,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-.container {
+.review-container {
   width: 90vw;
   max-width: var(--fixed-width);
 }
@@ -44,9 +44,9 @@ main {
   transition: var(--transition);
   text-align: center;
 }
-/* .review:hover {
+.review:hover {
   box-shadow: var(--dark-shadow);
-} */
+}
 .img-container {
   position: relative;
   width: 150px;
@@ -99,12 +99,17 @@ main {
   margin-bottom: 0.75rem;
 }
 .button-container {
+  margin-top: 1.75rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .prev-btn,
 .next-btn {
+  line-height: 1.25rem;
   color: var(--clr-primary-7);
   font-size: 1.25rem;
+  background: transparent;
   border-color: transparent;
   margin: 0 0.5rem;
   transition: var(--transition);
@@ -115,7 +120,7 @@ main {
   color: var(--clr-primary-5);
 }
 .random-btn {
-  margin-top: 0.5rem;
+  font-size: 1.25rem;
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
   padding: 0.25rem 0.5rem;

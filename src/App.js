@@ -4,6 +4,7 @@ import LandingPage from './LandingPage/LandingPage';
 import BirthdayReminder from './BirthdayReminder/BirthdayReminder';
 import Tours from './Tours/Tours';
 import Reviews from './Reviews/Reviews';
+import Accordion from './Accordion/Accordion';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/birth' component={BirthdayReminder} />
         <Route exact path='/tours' component={Tours} />
         <Route exact path='/reviews' component={Reviews} />
+        <Route exact path='/accordion' component={Accordion} />
       </Switch>
     </div>
   );

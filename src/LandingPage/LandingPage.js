@@ -25,11 +25,11 @@ const cardData = [
     url: '/reviews',
   },
   {
-    title: 'Birthday-Reminder',
-    description: 'Birthday Reminder App',
+    title: 'Accordion',
+    description: 'Accordion App',
     image:
       'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/birth',
+    url: '/accordion',
   },
 ];
 

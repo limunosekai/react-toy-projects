@@ -5,7 +5,7 @@ import Review from './Review';
 function Reviews() {
   return (
     <main>
-      <section className='container'>
+      <section className='review-container'>
         <div className='title'>
           <h2>Our Reviews</h2>
           <div className='underline'></div>
