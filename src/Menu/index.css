@@ -14,19 +14,24 @@ Menu
 .underline {
   width: 5rem;
   height: 0.25rem;
-  background: var(--clr-gold);
+  background: var(--clr-white);
   margin-left: auto;
   margin-right: auto;
 }
 .btn-container {
-  margin-bottom: 4rem;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+  height: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .filter-btn {
+  height: 50px;
   background: transparent;
   border-color: transparent;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
   letter-spacing: 1px;
@@ -41,12 +46,15 @@ Menu
   color: var(--clr-white);
 }
 .section-center {
+  background: var(--clr-white);
+  padding: 2rem;
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
   gap: 3rem 2rem;
   justify-items: center;
+  box-shadow: var(--light-shadow);
 }
 .menu-item {
   display: grid;
