@@ -30,6 +30,14 @@ function Review() {
     });
   };
 
+  const randomBtnHandler = () => {
+    let randomNum = Math.floor(Math.random() * people.length);
+    if (randomNum === index) {
+      randomNum = index + 1;
+    }
+    setIndex(checkNumber(randomNum));
+  };
+
   return (
     <article className='review'>
       <div className='img-container'>
@@ -45,7 +53,9 @@ function Review() {
         <button className='prev-btn' onClick={prevBtnHandler}>
           <FaChevronLeft />
         </button>
-        <button className='random-btn'>Random</button>
+        <button className='random-btn' onClick={randomBtnHandler}>
+          Random
+        </button>
         <button className='next-btn' onClick={nextBtnHandler}>
           <FaChevronRight />
         </button>
