@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, Col } from 'antd';
+import { Card } from 'antd';
 
 const { Meta } = Card;
 

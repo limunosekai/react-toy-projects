@@ -1,3 +1,16 @@
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
 /*
 =============== 
 Reviews
@@ -20,7 +33,7 @@ main {
   margin-right: auto;
 }
 .container {
-  width: 80vw;
+  width: 90vw;
   max-width: var(--fixed-width);
 }
 .review {
@@ -31,9 +44,9 @@ main {
   transition: var(--transition);
   text-align: center;
 }
-.review:hover {
+/* .review:hover {
   box-shadow: var(--dark-shadow);
-}
+} */
 .img-container {
   position: relative;
   width: 150px;
@@ -85,11 +98,13 @@ main {
 .info {
   margin-bottom: 0.75rem;
 }
+.button-container {
+  display: flex;
+}
 .prev-btn,
 .next-btn {
   color: var(--clr-primary-7);
   font-size: 1.25rem;
-  background: transparent;
   border-color: transparent;
   margin: 0 0.5rem;
   transition: var(--transition);
