@@ -39,11 +39,11 @@ const cardData = [
     url: '/menu',
   },
   {
-    title: 'Accordion',
-    description: 'Accordion App',
+    title: 'Tabs',
+    description: 'Tabs App',
     image:
       'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/accordion',
+    url: '/tabs',
   },
   {
     title: 'Accordion',

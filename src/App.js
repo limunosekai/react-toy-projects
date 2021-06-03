@@ -6,6 +6,7 @@ import Tours from './Tours/Tours';
 import Reviews from './Reviews/Reviews';
 import Accordion from './Accordion/Accordion';
 import Menu from './Menu/Menu';
+import Tabs from './Tabs/Tabs';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path='/reviews' component={Reviews} />
         <Route exact path='/accordion' component={Accordion} />
         <Route exact path='/menu' component={Menu} />
+        <Route exact path='/tabs' component={Tabs} />
       </Switch>
     </div>
   );
