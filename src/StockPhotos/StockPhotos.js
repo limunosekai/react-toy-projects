@@ -46,6 +46,7 @@ function StockPhotos() {
 
   useEffect(() => {
     fetchImages();
+    // eslint-disable-next-line
   }, [page]);
 
   useEffect(() => {
@@ -60,6 +61,7 @@ function StockPhotos() {
       }
     });
     return () => window.removeEventListener('scroll', event);
+    // eslint-disable-next-line
   }, []);
 
   const submitHandler = (e) => {
