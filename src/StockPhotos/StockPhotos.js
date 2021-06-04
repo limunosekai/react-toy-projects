@@ -10,18 +10,32 @@ const searchUrl = `https://api.unsplash.com/search/photos/`;
 function StockPhotos() {
   const [loading, setLoading] = useState(false);
   const [photos, setPhotos] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
+  const [query, setQuery] = useState('');
 
   const fetchImages = async () => {
     setLoading(true);
     let url;
     const urlPage = `&page=${page}`;
-    url = `${mainUrl}${clientID}${urlPage}`;
+    const urlQuery = `&query=${query}`;
+
+    if (query) {
+      url = `${searchUrl}${clientID}${urlQuery}${urlQuery}`;
+    } else {
+      url = `${mainUrl}${clientID}${urlPage}`;
+    }
+
     try {
       const response = await fetch(url);
       const data = await response.json();
       setPhotos((oldPhotos) => {
-        return [...oldPhotos, ...data];
+        if (query && page === 1) {
+          return data.results;
+        } else if (query) {
+          return [...oldPhotos, ...data.results];
+        } else {
+          return [...oldPhotos, ...data];
+        }
       });
       setLoading(false);
     } catch (err) {
@@ -50,6 +64,7 @@ function StockPhotos() {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    setPage(1);
   };
 
   return (
@@ -60,6 +75,10 @@ function StockPhotos() {
             type='text'
             placeholder='Please enter your keyword'
             className='form-input'
+            value={query}
+            onChange={(e) => {
+              setQuery(e.currentTarget.value);
+            }}
           />
           <button type='submit' className='submit-btn' onClick={submitHandler}>
             <FaSearch />
@@ -68,8 +87,8 @@ function StockPhotos() {
       </section>
       <section className='photos'>
         <div className='photos-center'>
-          {photos.map((photo) => {
-            return <Photo key={photo.id} {...photo} />;
+          {photos.map((photo, index) => {
+            return <Photo key={index} {...photo} />;
           })}
         </div>
         {loading && <h2 className='loading'>Loading...</h2>}
