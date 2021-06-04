@@ -1,0 +1,121 @@
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Stock Photos
+===============
+*/
+.search-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  padding: 5rem 0 0 0;
+  max-width: 1170px;
+}
+.search-form {
+  display: flex;
+}
+.form-input {
+  width: 100%;
+}
+.form-input,
+.submit-btn {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  font-size: 1.5rem;
+  background: transparent;
+  color: var(--clr-black);
+  border-bottom: 3px solid var(--clr-black);
+}
+.form-input {
+  color: var(--clr-black);
+}
+.form-input::placeholder {
+  color: var(--clr-grey-1);
+}
+.photos {
+  padding: 5rem 0;
+}
+.photos-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+.stock-photo {
+  height: 17.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.stock-photo > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.stock-photo h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--clr-primary-1);
+}
+.stock-photo p {
+  color: var(--clr-white);
+  margin-bottom: 0;
+}
+.user-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.stock-photo-info {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  transform: translateY(100%);
+  transition: var(--transition);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stock-photo:hover .stock-photo-info {
+  transform: translateY(0);
+}
+@media screen and (min-width: 576px) {
+  .photos-center {
+    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  }
+  .search-form {
+    max-width: 620px;
+  }
+  .form-input {
+    width: 620px;
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+}
