@@ -44,6 +44,7 @@ Stock Photos
   background: transparent;
   color: var(--clr-black);
   border-bottom: 3px solid var(--clr-black);
+  cursor: pointer;
 }
 .form-input {
   color: var(--clr-black);

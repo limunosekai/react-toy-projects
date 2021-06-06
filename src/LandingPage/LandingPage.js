@@ -7,78 +7,50 @@ const cardData = [
     title: 'Birthday-Reminder',
     description: 'Birthday Reminder App',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968145/portfolio/birth_uhjsg8.png',
     url: '/birth',
   },
   {
     title: 'Tours',
     description: 'Tours',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968145/portfolio/tour_spr91y.png',
     url: '/tours',
   },
   {
     title: 'Reviews',
     description: 'Review App',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968145/portfolio/review_cy7zvt.png',
     url: '/reviews',
   },
   {
     title: 'Accordion',
     description: 'Accordion App',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968145/portfolio/accordion_cxvsie.png',
     url: '/accordion',
   },
   {
     title: 'Menu',
     description: 'Menu App',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968145/portfolio/menu_liouho.png',
     url: '/menu',
   },
   {
     title: 'Tabs',
     description: 'Tabs App',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968145/portfolio/tabs_l1j5qu.png',
     url: '/tabs',
   },
   {
     title: 'StockPhotos',
     description: 'StockPhotos App - Infinite Scroll',
     image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
+      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
     url: '/stock-photos',
-  },
-  {
-    title: 'Accordion',
-    description: 'Accordion App',
-    image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/accordion',
-  },
-  {
-    title: 'Accordion',
-    description: 'Accordion App',
-    image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/accordion',
-  },
-  {
-    title: 'Accordion',
-    description: 'Accordion App',
-    image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/accordion',
-  },
-  {
-    title: 'Accordion',
-    description: 'Accordion App',
-    image:
-      'https://cdnweb01.wikitree.co.kr/webdata/editor/202008/05/img_20200805154432_95293cd6.webp',
-    url: '/accordion',
   },
 ];
 

@@ -30,7 +30,7 @@ function Tabs() {
   const { company, dates, duties, title } = jobs[value];
 
   return (
-    <section className='section'>
+    <section className='tabs-section'>
       <div className='title'>
         <h2>Expierence</h2>
         <div className='underline'></div>

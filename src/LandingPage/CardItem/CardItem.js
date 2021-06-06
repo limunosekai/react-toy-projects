@@ -12,8 +12,14 @@ function CardItem(props) {
     >
       <Card
         hoverable
-        style={{ width: '350px' }}
-        cover={<img src={props.data.image} alt='#' />}
+        bordered
+        cover={
+          <img
+            style={{ width: '350px', height: '250px' }}
+            src={props.data.image}
+            alt='#'
+          />
+        }
       >
         <Meta title={props.data.title} description={props.data.description} />
       </Card>

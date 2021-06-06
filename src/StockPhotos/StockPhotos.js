@@ -20,7 +20,7 @@ function StockPhotos() {
     const urlQuery = `&query=${query}`;
 
     if (query) {
-      url = `${searchUrl}${clientID}${urlQuery}${urlQuery}`;
+      url = `${searchUrl}${clientID}${urlPage}${urlQuery}`;
     } else {
       url = `${mainUrl}${clientID}${urlPage}`;
     }

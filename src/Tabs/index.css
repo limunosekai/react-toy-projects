@@ -1,5 +1,5 @@
 /* section */
-.section {
+.tabs-section {
   width: 90vw;
   margin: 3rem auto;
   max-width: 1170px;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .section {
+  .tabs-section {
     width: 95vw;
   }
 }

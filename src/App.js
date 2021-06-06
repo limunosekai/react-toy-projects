@@ -21,7 +21,9 @@ function App() {
           background: 'black',
         }}
       >
-        <h2 style={{ fontSize: '3rem', color: '#fff' }}>React Toy Projects</h2>
+        <h2 style={{ fontSize: '3rem', color: '#fff' }}>
+          React Toy Projects 😎
+        </h2>
       </div>
       <Switch>
         <Route exact path='/' component={LandingPage} />
