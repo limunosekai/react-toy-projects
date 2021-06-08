@@ -8,6 +8,7 @@ import Accordion from './Accordion/Accordion';
 import Menu from './Menu/Menu';
 import Tabs from './Tabs/Tabs';
 import StockPhotos from './StockPhotos/StockPhotos';
+import Slider from './Slider/Slider';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route exact path='/menu' component={Menu} />
         <Route exact path='/tabs' component={Tabs} />
         <Route exact path='/stock-photos' component={StockPhotos} />
+        <Route exact path='/slider' component={Slider} />
       </Switch>
     </div>
   );

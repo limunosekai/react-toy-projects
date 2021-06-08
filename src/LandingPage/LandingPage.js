@@ -52,6 +52,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
     url: '/stock-photos',
   },
+  {
+    title: 'Slider',
+    description: 'Slider App - Infinite Scroll',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
+    url: '/slider',
+  },
 ];
 
 function LandingPage() {

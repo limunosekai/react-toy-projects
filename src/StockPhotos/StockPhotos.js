@@ -72,7 +72,7 @@ function StockPhotos() {
   return (
     <div className='search-main'>
       <section className='search'>
-        <form className='search-form'>
+        <form className='search-form' onSubmit={submitHandler}>
           <input
             type='text'
             placeholder='Please enter your keyword'
