@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
-import './index.css';
+import './tabs.css';
 
 const url = 'https://course-api.com/react-tabs-project';
 

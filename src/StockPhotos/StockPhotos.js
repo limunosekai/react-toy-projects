@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './index.css';
+import './stockPhotos.css';
 import { FaSearch } from 'react-icons/fa';
 import Photo from './Photo';
 

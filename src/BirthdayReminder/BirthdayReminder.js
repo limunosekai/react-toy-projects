@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.css';
+import './birth.css';
 import data from './data';
 import List from './List';
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Loading from './Loading';
 import List from './List';
-import './index.css';
+import './tours.css';
 
 const url = 'https://course-api.com/react-tours-project';
 

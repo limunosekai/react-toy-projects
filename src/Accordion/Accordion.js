@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.css';
+import './accordion.css';
 import data from './data';
 import Question from './Question';
 
