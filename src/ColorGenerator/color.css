@@ -2,11 +2,11 @@
 .color-section {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1400px;
 }
 
 @media screen and (min-width: 992px) {
-  .section {
+  .color-section {
     width: 95vw;
   }
 }
@@ -29,20 +29,26 @@ Color Generator
   margin-right: 2rem;
 }
 
-input {
+.color-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-container input {
   border-color: transparent;
+  width: 15rem;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-top-left-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
 }
-.btn {
+.color-btn {
   background: var(--clr-primary-5);
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-color: transparent;
-  border-top-right-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
+  border-radius: var(--radius);
   text-transform: capitalize;
   color: var(--clr-white);
   cursor: pointer;
@@ -59,6 +65,17 @@ input {
 input.error {
   border: 2px solid var(--clr-red-dark);
 }
+
+.error-text {
+  color: red;
+}
+
+.center {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .colors {
   min-height: calc(100vh - 100px);
   display: grid;
@@ -73,11 +90,13 @@ input.error {
 }
 .percent-value {
   margin-bottom: 0;
-  color: var(--clr-grey-1);
+  color: var(--clr-black);
+  font-weight: bold;
 }
 .color-value {
-  color: var(--clr-grey-1);
+  color: var(--clr-black);
   margin-bottom: 0;
+  font-weight: bold;
 }
 .color-light .color-value {
   color: var(--clr-white);
