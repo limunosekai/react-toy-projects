@@ -59,6 +59,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
     url: '/slider',
   },
+  {
+    title: 'Lorem Ipsum',
+    description: 'Lorem App - Generate Lorem Ipsum',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
+    url: '/lorem',
+  },
 ];
 
 function LandingPage() {

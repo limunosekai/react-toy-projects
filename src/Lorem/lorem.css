@@ -27,7 +27,7 @@ Lorem Ipsum
 */
 h3 {
   text-transform: uppercase;
-  color: var(--clr-primary-1);
+  color: var(--clr-black);
 }
 .lorem-form {
   text-transform: capitalize;
@@ -38,13 +38,13 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.lorem-label {
+label {
   font-size: 1.25rem;
-  color: var(--clr-primary-1);
+  color: var(--clr-black);
 }
-.lorem-input {
+input {
   padding: 0.25rem 0.5rem;
-  width: 4rem;
+  width: 5rem;
   border-radius: var(--radius);
   border: none;
   margin: 0 0.5rem;
@@ -52,7 +52,8 @@ h3 {
 }
 button {
   background: var(--clr-primary-10);
+  margin: 0;
 }
-.result {
+.lorem-result {
   margin-bottom: 2rem;
 }
