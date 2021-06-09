@@ -56,21 +56,21 @@ const cardData = [
     title: 'Slider',
     description: 'Slider App - Infinite Scroll',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623223834/portfolio/slider_pm0bmo.png',
     url: '/slider',
   },
   {
     title: 'Lorem Ipsum',
     description: 'Lorem App - Generate Lorem Ipsum',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623223834/portfolio/lorem_bhwsi4.png',
     url: '/lorem',
   },
   {
     title: 'Color Generator',
     description: 'Color App - Generate Color',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623223834/portfolio/color_fv2tax.png',
     url: '/color',
   },
 ];

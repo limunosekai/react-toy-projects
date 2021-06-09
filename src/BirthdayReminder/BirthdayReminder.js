@@ -10,7 +10,7 @@ function BirthdayReminder() {
     setPeople([]);
   };
   return (
-    <main>
+    <main className='birth-main'>
       <section className='birth-container'>
         <h3>{people.length} birthdays today</h3>
         <List people={people} />

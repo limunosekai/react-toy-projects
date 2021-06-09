@@ -50,10 +50,14 @@ input {
   margin: 0 0.5rem;
   font-size: 1.25rem;
 }
-button {
-  background: var(--clr-primary-10);
-  margin: 0;
+.btn {
+  background: var(--clr-primary-6);
+  margin-top: 0;
 }
 .lorem-result {
   margin-bottom: 2rem;
+}
+
+.lorem-text p {
+  color: var(--clr-black);
 }
