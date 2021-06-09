@@ -66,6 +66,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
     url: '/lorem',
   },
+  {
+    title: 'Color Generator',
+    description: 'Color App - Generate Color',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1622968531/portfolio/stock_t98cml.png',
+    url: '/color',
+  },
 ];
 
 function LandingPage() {

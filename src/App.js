@@ -10,6 +10,7 @@ import Tabs from './Tabs/Tabs';
 import StockPhotos from './StockPhotos/StockPhotos';
 import Slider from './Slider/Slider';
 import Lorem from './Lorem/Lorem';
+import ColorGenerator from './ColorGenerator/ColorGenerator';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route exact path='/stock-photos' component={StockPhotos} />
         <Route exact path='/slider' component={Slider} />
         <Route exact path='/lorem' component={Lorem} />
+        <Route exact path='/color' component={ColorGenerator} />
       </Switch>
     </div>
   );
