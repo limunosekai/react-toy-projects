@@ -77,7 +77,7 @@ const cardData = [
     title: 'Grocery Bud',
     description: 'Grocery bud App',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623223834/portfolio/color_fv2tax.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623313147/portfolio/grocery_c2a5bi.png',
     url: '/grocery',
   },
 ];

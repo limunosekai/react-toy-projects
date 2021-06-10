@@ -12,10 +12,12 @@ import Slider from './Slider/Slider';
 import Lorem from './Lorem/Lorem';
 import ColorGenerator from './ColorGenerator/ColorGenerator';
 import GroceryBud from './GroceryBud/GroceryBud';
+import NavBar from './NavBar/NavBar';
 
 function App() {
   return (
     <div>
+      <NavBar />
       <div
         style={{
           display: 'flex',
