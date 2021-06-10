@@ -54,7 +54,7 @@ Grocery List
   background: #d4edda;
 }
 .grocery-form h3 {
-  color: var(--clr-primary-1);
+  color: var(--clr-black);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -66,9 +66,8 @@ Grocery List
   padding: 0.25rem;
   padding-left: 1rem;
   background: var(--clr-grey-10);
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
-  border-color: transparent;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
   font-size: 1rem;
   flex: 1 0 auto;
   color: var(--clr-grey-5);
@@ -86,16 +85,15 @@ Grocery List
   padding: 0.25rem;
   text-transform: capitalize;
   letter-spacing: 2px;
-  border-top-right-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
+  border-radius: var(--radius);
   cursor: pointer;
   content: var(--clr-primary-5);
   transition: var(--transition);
   font-size: 0.85rem;
+  color: var(--clr-white);
 }
 .grocery-submit-btn:hover {
   background: var(--clr-primary-5);
-  color: var(--clr-white);
 }
 
 .grocery-container {
@@ -113,24 +111,24 @@ Grocery List
   text-transform: capitalize;
 }
 .grocery-item:hover {
-  color: var(--clr-grey-5);
-  background: var(--clr-grey-10);
+  background: var(--clr-grey-1);
 }
-.grocery-item:hover .title {
-  color: var(--clr-grey-5);
+.grocery-item:hover .grocery-title {
+  color: var(--clr-black);
 }
 .grocery-title {
   margin-bottom: 0;
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-7);
   letter-spacing: 2px;
   transition: var(--transition);
 }
+
 .grocery-edit-btn,
 .grocery-delete-btn {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin: 0 0.15rem;
   transition: var(--transition);
 }
