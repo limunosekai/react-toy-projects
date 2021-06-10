@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './nav.css';
-import { FaBars, FaGithubAlt, FaGooglePlus, FaBlogger } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
 
 function NavBar() {
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
+
   return (
     <nav>
       <div className='nav-center'>
@@ -15,12 +28,15 @@ function NavBar() {
               alt='logo'
             />
           </div>
-          <button className='nav-toggle'>
+          <button
+            className='nav-toggle'
+            onClick={() => setShowLinks(!showLinks)}
+          >
             <FaBars />
           </button>
         </div>
-        <div className='links-container show-container'>
-          <ul className='links'>
+        <div className='links-container' ref={linksContainerRef}>
+          <ul className='links' ref={linksRef}>
             {links.map((item) => {
               const { id, url, text } = item;
               return (
