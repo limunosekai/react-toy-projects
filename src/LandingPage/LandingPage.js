@@ -73,6 +73,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1623223834/portfolio/color_fv2tax.png',
     url: '/color',
   },
+  {
+    title: 'Grocery Bud',
+    description: 'Grocery bud App',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1623223834/portfolio/color_fv2tax.png',
+    url: '/grocery',
+  },
 ];
 
 function LandingPage() {
