@@ -13,6 +13,7 @@ import Lorem from './Lorem/Lorem';
 import ColorGenerator from './ColorGenerator/ColorGenerator';
 import GroceryBud from './GroceryBud/GroceryBud';
 import NavBar from './NavBar/NavBar';
+import Sidebar from './Sidebar/Sidebar';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route exact path='/lorem' component={Lorem} />
         <Route exact path='/color' component={ColorGenerator} />
         <Route exact path='/grocery' component={GroceryBud} />
+        <Route exact path='/sidebar' component={Sidebar} />
       </Switch>
     </div>
   );

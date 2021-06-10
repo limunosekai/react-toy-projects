@@ -80,6 +80,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1623313147/portfolio/grocery_c2a5bi.png',
     url: '/grocery',
   },
+  {
+    title: 'Sidebar / Modal',
+    description: 'Sidebar/Modal App - Context API',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1623313147/portfolio/grocery_c2a5bi.png',
+    url: '/sidebar',
+  },
 ];
 
 function LandingPage() {
