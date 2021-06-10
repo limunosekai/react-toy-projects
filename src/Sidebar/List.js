@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { social, links } from './data';
+import { useContextGlobal } from './context';
 
 function List() {
+  const { isSidebarOpen, closeSidebar } = useContextGlobal();
+
   return (
-    <aside className={`sidebar show-sidebar`}>
+    <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
       <div className='sidebar-header'>
         <div className='logo'>
           <img
@@ -13,7 +16,7 @@ function List() {
             alt='logo'
           />
         </div>
-        <button className='sidebar-close-btn'>
+        <button className='sidebar-close-btn' onClick={closeSidebar}>
           <FaTimes />
         </button>
       </div>
