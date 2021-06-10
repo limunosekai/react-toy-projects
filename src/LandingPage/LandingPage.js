@@ -84,7 +84,7 @@ const cardData = [
     title: 'Sidebar / Modal',
     description: 'Sidebar/Modal App - Context API',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623313147/portfolio/grocery_c2a5bi.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
     url: '/sidebar',
   },
 ];
