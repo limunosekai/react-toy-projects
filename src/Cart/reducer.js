@@ -42,6 +42,29 @@ const reducer = (state, action) => {
         ...state,
         cart: tempCart2,
       };
+    // case 'TOGGLE_AMOUNT':
+    //   let tempCart3 = state.cart
+    //     .map((cartItem) => {
+    //       if (cartItem.id === action.payload.id) {
+    //         if (action.payload.type === 'inc') {
+    //           return {
+    //             ...cartItem,
+    //             amount: cartItem.amount + 1,
+    //           };
+    //         } else if (action.payload.type === 'dec') {
+    //           return {
+    //             ...cartItem,
+    //             amount: cartItem.amount - 1,
+    //           };
+    //         }
+    //       }
+    //       return cartItem;
+    //     })
+    //     .filter((cartItem) => cartItem.amount !== 0);
+    //   return {
+    //     ...state,
+    //     cart: tempCart3,
+    //   };
     case 'GET_TOTALS':
       let { total, amount } = state.cart.reduce(
         (cartTotal, cartItem) => {
