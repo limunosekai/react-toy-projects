@@ -7,11 +7,21 @@ function Navbar() {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
 
   const displaySubmenu = (e) => {
-    openSubmenu();
+    const page = e.target.textContent;
+    const tempBtn = e.target.getBoundingClientRect();
+    const center = (tempBtn.left + tempBtn.right) / 2;
+    const bottom = tempBtn.bottom - 3;
+
+    openSubmenu(page, { center, bottom });
   };
 
+  const submenuHandler = (e) => {
+    if (!e.target.classList.contains('stripe-link-btn')) {
+      closeSubmenu();
+    }
+  };
   return (
-    <nav className='stripe-nav'>
+    <nav className='stripe-nav' onMouseOver={submenuHandler}>
       <div className='stripe-nav-center'>
         <div className='stripe-nav-header'>
           <img className='stripe-nav-logo' src={logo} alt='' />

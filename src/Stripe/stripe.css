@@ -299,12 +299,12 @@ Stripe Styles
 .stripe-submenu-center a {
   width: 10rem;
   display: block;
-  color: var(--clr-grey-1);
+  color: var(--clr-black);
   text-transform: capitalize;
   display: flex;
   align-items: center;
 }
 .stripe-submenu-center svg {
-  color: var(--clr-grey-5);
+  color: var(--clr-black);
   margin-right: 1rem;
 }
