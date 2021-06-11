@@ -1,15 +1,13 @@
 import React from 'react';
+import App from './App';
 import './cart.css';
-import Navbar from './Navbar';
-import CartContainer from './CartContainer';
-import { useGlobalContext } from './context';
+import { AppProvider } from './context';
 
 function Cart() {
   return (
-    <>
-      <Navbar />
-      <CartContainer />
-    </>
+    <AppProvider>
+      <App />
+    </AppProvider>
   );
 }
 

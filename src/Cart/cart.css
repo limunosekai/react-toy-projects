@@ -8,11 +8,11 @@ Navbar
   margin-top: 5rem;
 }
 .cart-nav {
-  background: var(--clr-primary);
+  background: var(--clr-primary-5);
   padding: 1.25rem 2rem;
 }
 .cart-nav-center {
-  max-width: var(--fixed-width);
+  max-width: 50rem;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -38,7 +38,7 @@ Navbar
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
-  background: var(--clr-primary-light);
+  background: var(--clr-grey-7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,12 +54,12 @@ Cart
 ===============
 */
 .cart {
+  background-color: var(--clr-white);
   min-height: calc(100vh - 120px);
   width: 90vw;
   margin: 0 auto;
-  margin-top: 40px;
-  padding: 2.5rem 0;
-  max-width: var(--fixed-width);
+  padding: 2.5rem 2.5rem;
+  max-width: 55rem;
 }
 .cart h2 {
   text-transform: uppercase;
@@ -89,10 +89,11 @@ Cart
   border: 1px solid var(--clr-red-dark);
   margin-top: 2.25rem;
   border-radius: var(--radius);
+  cursor: pointer;
 }
 .cart-clear-btn:hover {
   background: var(--clr-red-light);
-  color: var(--clr-red-dark);
+  color: var(--clr-white);
   border-color: var(--clr-red-light);
 }
 /*
@@ -121,7 +122,7 @@ Cart Item
   color: var(--clr-grey-5);
 }
 .cart-remove-btn {
-  color: var(--clr-primary);
+  color: var(--clr-red-dark);
   letter-spacing: var(--spacing);
   cursor: pointer;
   font-size: 0.85rem;
@@ -131,7 +132,7 @@ Cart Item
   transition: var(--transition);
 }
 .cart-remove-btn:hover {
-  color: var(--clr-primary-light);
+  color: var(--clr-red-light);
 }
 .cart-amount-btn {
   width: 1.5rem;
@@ -140,10 +141,10 @@ Cart Item
   cursor: pointer;
 }
 .cart-amount-btn svg {
-  fill: var(--clr-primary);
+  fill: var(--clr-primary-5);
 }
 .cart-amount-btn:hover svg {
-  fill: var(--clr-primary-light);
+  fill: var(--clr-primary-7);
 }
 .cart-amount {
   text-align: center;
