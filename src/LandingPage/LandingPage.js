@@ -87,6 +87,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
     url: '/sidebar',
   },
+  {
+    title: 'Stripe',
+    description: 'Stripe Simple App - Context API',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+    url: '/stripe',
+  },
 ];
 
 function LandingPage() {

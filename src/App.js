@@ -14,6 +14,7 @@ import ColorGenerator from './ColorGenerator/ColorGenerator';
 import GroceryBud from './GroceryBud/GroceryBud';
 import NavBar from './NavBar/NavBar';
 import Sidebar from './Sidebar/Sidebar';
+import Stripe from './Stripe/Stripe';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route exact path='/color' component={ColorGenerator} />
         <Route exact path='/grocery' component={GroceryBud} />
         <Route exact path='/sidebar' component={Sidebar} />
+        <Route exact path='/stripe' component={Stripe} />
       </Switch>
     </div>
   );
