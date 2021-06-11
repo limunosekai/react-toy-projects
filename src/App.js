@@ -15,6 +15,7 @@ import GroceryBud from './GroceryBud/GroceryBud';
 import NavBar from './NavBar/NavBar';
 import Sidebar from './Sidebar/Sidebar';
 import Stripe from './Stripe/Stripe';
+import Cart from './Cart/Cart';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route exact path='/grocery' component={GroceryBud} />
         <Route exact path='/sidebar' component={Sidebar} />
         <Route exact path='/stripe' component={Stripe} />
+        <Route exact path='/cart' component={Cart} />
       </Switch>
     </div>
   );

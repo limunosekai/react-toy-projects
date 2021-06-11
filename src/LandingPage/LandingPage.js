@@ -91,8 +91,15 @@ const cardData = [
     title: 'Stripe',
     description: 'Stripe Simple App - Context API',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623395295/portfolio/stripe_qksha9.png',
     url: '/stripe',
+  },
+  {
+    title: 'Cart',
+    description: 'Simple Cart App - Context API',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+    url: '/cart',
   },
 ];
 
