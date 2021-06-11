@@ -60,6 +60,17 @@ const reducer = (state, action) => {
         total,
         amount,
       };
+    case 'LOADING':
+      return {
+        ...state,
+        loading: true,
+      };
+    case 'FETCH_ITEMS':
+      return {
+        ...state,
+        cart: action.payload,
+        loading: false,
+      };
     default:
       return state;
   }
