@@ -16,6 +16,7 @@ import NavBar from './NavBar/NavBar';
 import Sidebar from './Sidebar/Sidebar';
 import Stripe from './Stripe/Stripe';
 import Cart from './Cart/Cart';
+import Cocktail from './Cocktail/Cocktail';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route exact path='/sidebar' component={Sidebar} />
         <Route exact path='/stripe' component={Stripe} />
         <Route exact path='/cart' component={Cart} />
+        <Route exact path='/cocktail' component={Cocktail} />
       </Switch>
     </div>
   );

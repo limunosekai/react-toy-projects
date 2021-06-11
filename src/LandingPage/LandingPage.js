@@ -98,8 +98,15 @@ const cardData = [
     title: 'Cart',
     description: 'Simple Cart App - Context API',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+      'https://res.cloudinary.com/limu/image/upload/v1623401979/portfolio/cart_rzgm0x.png',
     url: '/cart',
+  },
+  {
+    title: 'Cocktail DB',
+    description: 'Cocktail Search App - Context API, Cocktail DB API',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+    url: '/cocktail',
   },
 ];
 
