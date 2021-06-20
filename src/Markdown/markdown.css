@@ -3,12 +3,26 @@
 Markdown
 ===============
 */
+
+/* section */
+.markdown-section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .markdown-section {
+    width: 95vw;
+  }
+}
+
 .markdown {
   padding: 4rem;
   display: grid;
   row-gap: 4rem;
 }
-.input {
+.markdown-input {
   border-color: transparent;
   border-radius: var(--radius);
   font-size: 1.2rem;
@@ -16,8 +30,9 @@ Markdown
   box-shadow: var(--dark-shadow);
   min-height: 30vh;
 }
-.input,
-.result {
+.markdown-input,
+.markdown-result {
+  width: 500px;
   padding: 1rem 2rem;
 }
 
@@ -29,7 +44,7 @@ Markdown
   }
 }
 /* unique styles */
-img {
+.markdown-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
