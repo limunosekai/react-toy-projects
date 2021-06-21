@@ -102,31 +102,24 @@ const cardData = [
     url: '/cart',
   },
   {
-    title: 'Cocktail DB',
-    description: 'Cocktail Search App - Context API, Cocktail DB API',
-    image:
-      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
-    url: '/cocktail',
-  },
-  {
     title: 'Markdown-Preview',
     description: 'Markdown-Preview App - react-markdown',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+      'https://res.cloudinary.com/limu/image/upload/v1624272572/portfolio/markdown_zxbtom.png',
     url: '/markdown',
   },
   {
     title: 'Random-User',
     description: 'Random-User App - random user API',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+      'https://res.cloudinary.com/limu/image/upload/v1624272573/portfolio/random_qrk0qi.png',
     url: '/random-user',
   },
   {
     title: 'Pagination',
     description: 'Simple Pagination App - github API',
     image:
-      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+      'https://res.cloudinary.com/limu/image/upload/v1624272573/portfolio/pagination_vbhsh3.png',
     url: '/pagination',
   },
 ];
