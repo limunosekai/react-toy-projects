@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './pagination.css';
 import Follower from './Follower';
 import { useFetch } from './useFetch';
 
 function Pagination() {
   const { loading, data } = useFetch();
+  const [page, setPage] = useState(0);
+  const [followers, setFollowers] = useState([]);
+
+  useEffect(() => {
+    if (loading) return;
+    setFollowers(data[page]);
+  }, [loading]);
 
   return (
     <div>
@@ -14,7 +21,7 @@ function Pagination() {
       </div>
       <section className='pagination-followers'>
         <div className='pagination-container'>
-          {data.map((follower) => {
+          {followers.map((follower) => {
             return <Follower key={follower.id} {...follower} />;
           })}
         </div>
