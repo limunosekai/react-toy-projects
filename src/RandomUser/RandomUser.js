@@ -53,7 +53,13 @@ function RandomUser() {
     getPerson();
   }, []);
 
-  const handleValue = (e) => {};
+  const handleValue = (e) => {
+    if (e.target.classList.contains('ru-icon')) {
+      const newTitle = e.target.dataset.label;
+      setTitle(newTitle);
+      setValue(person[newTitle]);
+    }
+  };
 
   return (
     <main>
