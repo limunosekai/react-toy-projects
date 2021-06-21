@@ -18,6 +18,7 @@ import Stripe from './Stripe/Stripe';
 import Cart from './Cart/Cart';
 import Markdown from './Markdown/Markdown';
 import RandomUser from './RandomUser/RandomUser';
+import Pagination from './Pagination/Pagination';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <Route exact path='/cart' component={Cart} />
         <Route exact path='/markdown' component={Markdown} />
         <Route exact path='/random-user' component={RandomUser} />
+        <Route exact path='/pagination' component={Pagination} />
       </Switch>
     </div>
   );

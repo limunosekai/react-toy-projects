@@ -117,10 +117,17 @@ const cardData = [
   },
   {
     title: 'Random-User',
-    description: 'Random-User App - react-markdown',
+    description: 'Random-User App - random user API',
     image:
       'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
     url: '/random-user',
+  },
+  {
+    title: 'Pagination',
+    description: 'Simple Pagination App - github API',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1623320474/portfolio/sidebar_er45zx.png',
+    url: '/pagination',
   },
 ];
 
