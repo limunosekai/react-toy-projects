@@ -25,7 +25,59 @@ function RandomUser() {
       <div className='ru-block bcg-black'></div>
       <div className='ru-block'>
         <div className='ru-container'>
-          <img src={defaultImage} alt='random user' />
+          <img
+            src={(person && person.image) || defaultImage}
+            alt='random user'
+          />
+          <p className='ru-user-title'>My {title} is</p>
+          <p className='ru-user-value'>{value}</p>
+          <div className='ru-values-list'>
+            <button
+              className='ru-icon'
+              data-label='name'
+              onMouseOver={handleValue}
+            >
+              <FaUser />
+            </button>
+            <button
+              className='ru-icon'
+              data-label='email'
+              onMouseOver={handleValue}
+            >
+              <FaEnvelopeOpen />
+            </button>
+            <button
+              className='ru-icon'
+              data-label='age'
+              onMouseOver={handleValue}
+            >
+              <FaCalendarTimes />
+            </button>
+            <button
+              className='ru-icon'
+              data-label='street'
+              onMouseOver={handleValue}
+            >
+              <FaMap />
+            </button>
+            <button
+              className='ru-icon'
+              data-label='phone'
+              onMouseOver={handleValue}
+            >
+              <FaPhone />
+            </button>
+            <button
+              className='ru-icon'
+              data-label='password'
+              onMouseOver={handleValue}
+            >
+              <FaLock />
+            </button>
+          </div>
+          <button className='ru-btn' type='button'>
+            {loading ? 'loading...' : 'Random User'}
+          </button>
         </div>
       </div>
     </main>
