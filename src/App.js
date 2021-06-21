@@ -17,6 +17,7 @@ import Sidebar from './Sidebar/Sidebar';
 import Stripe from './Stripe/Stripe';
 import Cart from './Cart/Cart';
 import Markdown from './Markdown/Markdown';
+import RandomUser from './RandomUser/RandomUser';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
         <Route exact path='/stripe' component={Stripe} />
         <Route exact path='/cart' component={Cart} />
         <Route exact path='/markdown' component={Markdown} />
+        <Route exact path='/random-user' component={RandomUser} />
       </Switch>
     </div>
   );
