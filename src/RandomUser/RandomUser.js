@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './randomUser.css';
 import {
   FaEnvelopeOpen,
@@ -17,6 +17,41 @@ function RandomUser() {
   const [person, setPerson] = useState(null);
   const [title, setTitle] = useState('name');
   const [value, setValue] = useState('Random Person');
+
+  const getPerson = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    const person = data.results[0];
+    const { phone, email } = person;
+    const { large: image } = person.picture;
+    const {
+      login: { password },
+    } = person;
+    const { first, last } = person.name;
+    const {
+      dob: { age },
+    } = person;
+    const {
+      street: { number, name },
+    } = person.location;
+    const newPerson = {
+      image,
+      phone,
+      email,
+      password,
+      age,
+      street: `${number} ${name}`,
+      name: `${first} ${last}`,
+    };
+    setPerson(newPerson);
+    setLoading(false);
+    setTitle('name');
+    setValue(newPerson.name);
+  };
+
+  useEffect(() => {
+    getPerson();
+  }, []);
 
   const handleValue = (e) => {};
 
@@ -75,7 +110,7 @@ function RandomUser() {
               <FaLock />
             </button>
           </div>
-          <button className='ru-btn' type='button'>
+          <button className='ru-btn' type='button' onClick={getPerson}>
             {loading ? 'loading...' : 'Random User'}
           </button>
         </div>
