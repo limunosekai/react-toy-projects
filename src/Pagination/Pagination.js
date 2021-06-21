@@ -11,7 +11,31 @@ function Pagination() {
   useEffect(() => {
     if (loading) return;
     setFollowers(data[page]);
-  }, [loading]);
+  }, [loading, page]);
+
+  const handlePage = (index) => {
+    setPage(index);
+  };
+
+  const prevPageHandler = () => {
+    setPage((oldPage) => {
+      let prevPage = oldPage - 1;
+      if (prevPage < 0) {
+        prevPage = data.length - 1;
+      }
+      return prevPage;
+    });
+  };
+
+  const nextPageHandler = () => {
+    setPage((oldPage) => {
+      let nextPage = oldPage + 1;
+      if (nextPage > data.length - 1) {
+        nextPage = 0;
+      }
+      return nextPage;
+    });
+  };
 
   return (
     <div>
@@ -25,6 +49,29 @@ function Pagination() {
             return <Follower key={follower.id} {...follower} />;
           })}
         </div>
+        {!loading && (
+          <div className='pagination-btn-container'>
+            <button className='pagination-prev-btn' onClick={prevPageHandler}>
+              prev
+            </button>
+            {data.map((item, index) => {
+              return (
+                <button
+                  key={index}
+                  className={`pagination-page-btn ${
+                    index === page ? 'pagination-active-btn' : null
+                  }`}
+                  onClick={() => handlePage(index)}
+                >
+                  {index + 1}
+                </button>
+              );
+            })}
+            <button className='pagination-next-btn' onClick={nextPageHandler}>
+              next
+            </button>
+          </div>
+        )}
       </section>
     </div>
   );
