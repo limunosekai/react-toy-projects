@@ -122,6 +122,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1624272573/portfolio/pagination_vbhsh3.png',
     url: '/pagination',
   },
+  {
+    title: 'Dark Mode',
+    description: 'Dark Mode App',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1624272573/portfolio/pagination_vbhsh3.png',
+    url: '/dark',
+  },
 ];
 
 function LandingPage() {

@@ -19,6 +19,7 @@ import Cart from './Cart/Cart';
 import Markdown from './Markdown/Markdown';
 import RandomUser from './RandomUser/RandomUser';
 import Pagination from './Pagination/Pagination';
+import Dark from './Dark/Dark';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route exact path='/markdown' component={Markdown} />
         <Route exact path='/random-user' component={RandomUser} />
         <Route exact path='/pagination' component={Pagination} />
+        <Route exact path='/dark' component={Dark} />
       </Switch>
     </div>
   );
