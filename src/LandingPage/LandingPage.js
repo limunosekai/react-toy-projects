@@ -129,6 +129,13 @@ const cardData = [
       'https://res.cloudinary.com/limu/image/upload/v1624272573/portfolio/pagination_vbhsh3.png',
     url: '/dark',
   },
+  {
+    title: 'Hacker News',
+    description: 'Hacker News App - Context API',
+    image:
+      'https://res.cloudinary.com/limu/image/upload/v1624272573/portfolio/pagination_vbhsh3.png',
+    url: '/hacker',
+  },
 ];
 
 function LandingPage() {

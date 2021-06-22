@@ -1,0 +1,151 @@
+/* section */
+.hacker-section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .hacker-section {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Search
+===============
+*/
+.hacker-search-form {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.hacker-form-input {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid var(--clr-grey-8);
+  max-width: 600px;
+  background: transparent;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--clr-grey-3);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  margin-top: 1rem;
+}
+
+/*
+=============== 
+Buttons
+===============
+*/
+
+.hacker-btn-container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hacker-btn-container p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hacker-btn-container button {
+  margin: 1rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-color: transparent;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+}
+.hacker-btn-container button:disabled {
+  cursor: not-allowed;
+}
+
+/*
+=============== 
+Spinner
+===============
+*/
+.hacker-spinner-container {
+  position: relative;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hacker-loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
+}
+
+/*
+=============== 
+Story
+===============
+*/
+.hacker-stories {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .hacker-stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: start; */
+  }
+}
+.hacker-story {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 1rem 2rem;
+}
+
+.hacker-title {
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+.hacker-info {
+  margin-bottom: 0.5rem;
+  color: var(--clr-grey-5);
+}
+
+.hacker-read-link {
+  font-size: 0.85rem;
+  margin-right: 0.75rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+
+.hacker-remove-btn {
+  background: transparent;
+  color: var(--clr-red-dark);
+  border-color: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+}
