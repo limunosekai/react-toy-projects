@@ -4,10 +4,27 @@ Global Styles
 ===============
 */
 
-:root {
+/* :root {
   --clr-bcg: #fff;
   --clr-font: #282c35;
   --clr-primary: #e90000;
+} */
+
+.dark-theme {
+  --clr-bcg: #000;
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+}
+
+.light-theme {
+  --clr-bcg: #f28ab2;
+  --clr-font: #282c35;
+  --clr-primary: #e90000;
+}
+
+body {
+  background: var(--clr-bcg);
+  transition: all 0.3s linear;
 }
 
 /*
@@ -15,10 +32,13 @@ Global Styles
 Navbar
 ===============
 */
+.dark-nav {
+  background: var(--clr-bcg);
+}
 .dark-nav-center {
   width: 90vw;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,18 +46,24 @@ Navbar
 }
 .dark-nav-center h1 {
   font-size: 2.5rem;
+  color: var(--clr-font);
   text-transform: capitalize;
   letter-spacing: 2px;
 }
 
 .dark-articles {
+  background: var(--clr-bcg);
   padding: 5rem 2rem;
   width: 90vw;
   max-width: 600px;
   margin: 0 auto;
+  transition: all 0.3s linear;
 }
 .dark-post {
   margin-bottom: 3rem;
+}
+.dark-post span {
+  color: var(--clr-font);
 }
 .dark-post h2 {
   color: var(--clr-primary);
