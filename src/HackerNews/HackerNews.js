@@ -4,7 +4,13 @@ import Stories from './Stories';
 import Buttons from './Buttons';
 
 function HackerNews() {
-  return <div></div>;
+  return (
+    <>
+      <SearchForm />
+      <Buttons />
+      <Stories />
+    </>
+  );
 }
 
 export default HackerNews;
