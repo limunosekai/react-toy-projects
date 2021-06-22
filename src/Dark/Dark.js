@@ -28,7 +28,7 @@ function Dark() {
   }, [theme]);
 
   return (
-    <div>
+    <div className='dark-container'>
       <nav className='dark-nav'>
         <div className='dark-nav-center'>
           <h1>Dark Mode</h1>

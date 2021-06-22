@@ -22,18 +22,20 @@ Global Styles
   --clr-primary: #e90000;
 }
 
-body {
-  background: var(--clr-bcg);
-  transition: all 0.3s linear;
-}
-
 /*
 =============== 
 Navbar
 ===============
 */
+.dark-container {
+  width: 100vw;
+  height: 100vh;
+  background: var(--clr-bcg);
+  transition: all 0.3s linear;
+}
 .dark-nav {
   background: var(--clr-bcg);
+  transition: all 0.3s linear;
 }
 .dark-nav-center {
   width: 90vw;
