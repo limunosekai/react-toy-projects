@@ -25,16 +25,16 @@ Search
 }
 .hacker-form-input {
   width: 100%;
+  outline: none;
   border: none;
-  border-bottom: 3px solid var(--clr-grey-8);
   max-width: 600px;
-  background: transparent;
+  background: var(--clr-white);
   padding: 1rem;
   font-size: 1rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-black);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
-  margin-top: 1rem;
+  margin: 1rem 0 0;
 }
 
 /*
