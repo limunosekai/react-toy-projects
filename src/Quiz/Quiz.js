@@ -5,7 +5,8 @@ import Loading from './Loading';
 import Modal from './Modal';
 
 function Quiz() {
-  const { waiting, loading, questions, index, correct } = useGlobalContext();
+  const { waiting, loading, questions, index, correct, nextQuestion } =
+    useGlobalContext();
   if (waiting) {
     return <SetupForm />;
   }
@@ -36,7 +37,9 @@ function Quiz() {
             })}
           </div>
         </article>
-        <button className='next-question'>Next</button>
+        <button className='next-question' onClick={nextQuestion}>
+          Next
+        </button>
       </section>
     </div>
   );
