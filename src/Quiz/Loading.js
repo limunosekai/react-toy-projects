@@ -2,9 +2,9 @@ import React from 'react';
 
 function Loading() {
   return (
-    <main>
+    <div>
       <div className='quiz-loading'></div>
-    </main>
+    </div>
   );
 }
 

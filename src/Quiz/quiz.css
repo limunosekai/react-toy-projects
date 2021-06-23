@@ -44,7 +44,7 @@ Quiz
   display: block;
   width: 100%;
   margin: 0.75rem auto;
-  background: var(--clr-primary-7);
+  background: var(--clr-primary-5);
   border-radius: var(--radius);
   border-color: transparent;
   color: var(--clr-black);
@@ -60,7 +60,7 @@ Quiz
   }
 }
 .answer-btn:hover {
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-3);
   color: var(--clr-white);
 }
 .correct-answers {
@@ -78,7 +78,7 @@ Quiz
   border-color: transparent;
   padding: 0.25rem 0.5rem;
   display: block;
-  width: 35%;
+  width: 15%;
   margin-left: auto;
   margin-top: 2rem;
   text-transform: capitalize;

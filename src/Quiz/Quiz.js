@@ -12,7 +12,34 @@ function Quiz() {
   if (loading) {
     return <Loading />;
   }
-  return <main className='quiz-main'>quiz App</main>;
+  const { question, incorrect_answers, correct_answer } = questions[index];
+  const answers = [...incorrect_answers, correct_answer];
+
+  return (
+    <div className='quiz-main'>
+      <Modal />
+      <section className='quiz'>
+        <p className='correct-answers'>
+          Correct Answers : {correct}/{questions.length}
+        </p>
+        <article className='quiz-container'>
+          <h2 dangerouslySetInnerHTML={{ __html: question }} />
+          <div className='quiz-btn-container'>
+            {answers.map((answer, i) => {
+              return (
+                <button
+                  key={i}
+                  className='answer-btn'
+                  dangerouslySetInnerHTML={{ __html: answer }}
+                />
+              );
+            })}
+          </div>
+        </article>
+        <button className='next-question'>Next</button>
+      </section>
+    </div>
+  );
 }
 
 export default Quiz;
