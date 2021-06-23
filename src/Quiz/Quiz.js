@@ -5,8 +5,15 @@ import Loading from './Loading';
 import Modal from './Modal';
 
 function Quiz() {
-  const { waiting, loading, questions, index, correct, nextQuestion } =
-    useGlobalContext();
+  const {
+    waiting,
+    loading,
+    questions,
+    index,
+    correct,
+    nextQuestion,
+    checkAnswer,
+  } = useGlobalContext();
   if (waiting) {
     return <SetupForm />;
   }
@@ -31,6 +38,7 @@ function Quiz() {
                 <button
                   key={i}
                   className='answer-btn'
+                  onClick={() => checkAnswer(correct_answer === answer)}
                   dangerouslySetInnerHTML={{ __html: answer }}
                 />
               );
