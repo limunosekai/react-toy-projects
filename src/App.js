@@ -21,6 +21,7 @@ import RandomUser from './RandomUser/RandomUser';
 import Pagination from './Pagination/Pagination';
 import Dark from './Dark/Dark';
 import HackerIndex from './HackerNews/HackerIndex';
+import QuizIndex from './Quiz/QuizIndex';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Route exact path='/pagination' component={Pagination} />
         <Route exact path='/dark' component={Dark} />
         <Route exact path='/hacker' component={HackerIndex} />
+        <Route exact path='/quiz' component={QuizIndex} />
       </Switch>
     </div>
   );
