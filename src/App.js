@@ -63,6 +63,9 @@ function App() {
         <Route exact path='/hacker' component={HackerIndex} />
         <Route exact path='/quiz' component={QuizIndex} />
       </Switch>
+      <footer style={{ textAlign: 'center' }}>
+        <p>limunosekai</p>
+      </footer>
     </div>
   );
 }
