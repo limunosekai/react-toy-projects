@@ -101,6 +101,7 @@ Form
 */
 
 .quiz-setup-form h2 {
+  text-align: center;
   margin-bottom: 2rem;
 }
 .quiz-form-control {
@@ -115,7 +116,8 @@ Form
 }
 .quiz-form-input {
   border: none;
-  background: var(--clr-grey-10);
+  background: var(--clr-grey-1);
+  margin: 0;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
   width: 100%;
