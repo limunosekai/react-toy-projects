@@ -5,7 +5,14 @@ import Loading from './Loading';
 import Modal from './Modal';
 
 function Quiz() {
-  return <div></div>;
+  const { waiting, loading, questions, index, correct } = useGlobalContext();
+  if (waiting) {
+    return <SetupForm />;
+  }
+  if (loading) {
+    return <Loading />;
+  }
+  return <main className='quiz-main'>quiz App</main>;
 }
 
 export default Quiz;

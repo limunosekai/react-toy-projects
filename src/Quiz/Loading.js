@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Loading() {
-  return <div></div>;
+  return (
+    <main>
+      <div className='quiz-loading'></div>
+    </main>
+  );
 }
 
 export default Loading;

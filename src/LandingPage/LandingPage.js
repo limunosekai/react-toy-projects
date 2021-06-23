@@ -138,7 +138,7 @@ const cardData = [
   },
   {
     title: 'Quiz',
-    description: 'Simple Quiz App - Context API',
+    description: 'Simple Quiz App - Context API, Open Trivia API',
     image:
       'https://res.cloudinary.com/limu/image/upload/v1624346227/portfolio/hacker_ue25nw.png',
     url: '/quiz',
